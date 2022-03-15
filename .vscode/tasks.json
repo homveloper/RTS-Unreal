@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "RTS Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"Mac",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Test",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTS IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTS IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTS",
+				"IOS",
+				"Shipping",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTSEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Debug",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTSEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RTSEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		},
+		{
+			"label": "RTSEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"RTSEditor",
+				"Mac",
+				"Development",
+				"/Users/totomo/Documents/GitHub/RTS-Unreal/RTS.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_5.0"
+			}
+		}
+	]
+}
